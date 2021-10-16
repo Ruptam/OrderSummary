@@ -1,0 +1,149 @@
+.orderContainer {
+    height: 100vh;
+    width: 100vw;
+    // background-color: aqua;
+
+    .backgroundImage {
+        height: 50vh;
+        width: 100vw;
+        // background-color: red;
+        img {
+            width: 100vw;
+            height: 50vh;
+        }
+    }
+    .cardLayout {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        height: 50vh;
+        width: 30vw;
+        // background-color: yellow;
+        .card {
+            position: relative;
+            bottom: 30vh;
+            left: 100%;
+            align-content: center;
+            height: 80vh;
+            width: 80vw;
+            background-color: white;
+            border-radius: 30px;
+
+            mat-card {
+                height: 100%;
+                border-radius: 30px;
+            }
+
+            mat-card-title {
+                text-align: center;
+            }
+
+            .titleDiv {
+                padding: 30px 0;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+
+                mat-card-subtitle {
+                    width: 65%;
+                    position: relative;
+                    left: 22%;
+                    padding-top: 30px;
+                }
+            }
+            .center {
+                display: flex;
+                justify-content: center;
+                position: relative;
+                bottom: 50px;
+                
+                flex-direction: column;
+                mat-card-content {
+                    height: 10%;
+                    width: 80%;
+                    display: flex;
+                    justify-content: center;
+                    position: relative;
+                    left: 50px;
+
+                    .imageIcon {
+                        height: 30px;
+                        width: 70px;
+
+                        img {
+                            height: 40px;
+                            width: 40px;
+                            position: relative;
+                            top: 25px;
+                            left: 20px;
+                        }
+                    }
+
+                    .plan {
+                        height: 60px;
+                        width: 20vw;
+                        display: flex;
+                        align-content: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        p {
+                            margin: 0;
+                            padding: 0;
+
+                            
+                        }
+                        .annualPlan {
+                            font-weight: 600;
+                            font-size: large;
+                        }
+                    }
+
+                    .changeAction {
+                        height: 60px;
+                        width: 80px;
+                        display: flex;
+                        align-items: center;
+
+                        a {
+                            font-weight: 500;
+                        }
+
+                    }
+                }
+            }
+
+            .payment {
+                background-color: hsl(245, 75%, 52%);
+                border-radius: 10px;
+                margin: 10px 0;
+
+                button {
+                    width: 100%;
+                    border-radius: 10px;
+                    color: white;
+                }
+
+                button:hover {
+                    background-color: rgb(102, 132, 197);
+                }
+            }
+
+            .cancel {
+                background-color: white;
+                border-radius: 10px;
+
+                button {
+                    width: 100%;
+                    border-radius: 10px;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(102, 132, 197);
+}
